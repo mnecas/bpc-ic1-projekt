@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 char string[100];
+char test[65];
 
 
 void lazy() {
@@ -15,6 +16,7 @@ void food(int magic) {
     strcat(string, "/bin");
   }
 }
+
 
 void feeling_sick(int magic1, int magic2) {
   printf("1m f33ling s1cK...\n");
@@ -30,6 +32,11 @@ void vuln(char *string) {
 
 int main(int argc, char** argv) {
   string[0] = 0;
+
+
+  printf("Tell me what you got?\n");
+  scanf("%s", test);
+  printf("Tady je ta blbost: %s \n", test);
 
   printf("m3 hUN6rY...cAn 1 haZ 5H3ll?! f33d mE s0m3 beef\n\n");
   if (argc > 1) {
