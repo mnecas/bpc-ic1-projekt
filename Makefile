@@ -1,5 +1,5 @@
 build: clean
-	@gcc -ggdb main.c -o build/app
+	@gcc -ggdb main.c -m32 -g -o build/app
 
 run: build
 	@./build/app
