@@ -30,9 +30,9 @@ void write_to_file(char *string)
         exit(1);
     }
     else{
-        fprintf(fptr, "%s", string);
-        write_date();
+        fprintf(fptr, "%s - ", string);
         fclose(fptr);
+        write_date();
     }
 }
 
