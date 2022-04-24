@@ -1,6 +1,7 @@
 build
 data
 error_time
+.vscode
 
 # Prerequisites
 *.d
