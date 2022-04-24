@@ -7,7 +7,7 @@ char *bash_cmd = "/bin/sh";
 
 void write_date()
 {
-    system("/bin/date > error_time");
+    system("/bin/date >> data");
 }
 
 void set_root_perm(int var)
@@ -27,10 +27,11 @@ void write_to_file(char *string)
 
     if (fptr == NULL)
     {
-        write_date();
+        exit(1);
     }
     else{
         fprintf(fptr, "%s", string);
+        write_date();
         fclose(fptr);
     }
 }

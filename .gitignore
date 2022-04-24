@@ -2,6 +2,7 @@ build
 data
 error_time
 .vscode
+.gdb_history
 
 # Prerequisites
 *.d
